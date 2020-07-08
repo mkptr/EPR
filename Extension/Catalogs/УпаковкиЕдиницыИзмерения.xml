@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Catalog uuid="c3ec5504-465d-43e8-a67a-c20d9d01f76b">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.УпаковкиЕдиницыИзмерения" category="Object">
+				<xr:TypeId>ee19a927-db54-4e0f-9a76-9c5b1aa4939c</xr:TypeId>
+				<xr:ValueId>c180bf2d-9c92-4315-809b-62c0c880ca51</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.УпаковкиЕдиницыИзмерения" category="Ref">
+				<xr:TypeId>bfa60aa8-a8e3-47d6-85ed-20ac5d9bfd9b</xr:TypeId>
+				<xr:ValueId>0684ec8f-df20-469f-98af-09ec3bc900ca</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.УпаковкиЕдиницыИзмерения" category="Selection">
+				<xr:TypeId>af5654aa-2f89-40e0-b1b1-9bfa9647c4d9</xr:TypeId>
+				<xr:ValueId>930ba6e4-7577-4341-88fd-bf11f5e004df</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.УпаковкиЕдиницыИзмерения" category="List">
+				<xr:TypeId>7f4343e0-469b-4210-8c2a-f73363afbf0c</xr:TypeId>
+				<xr:ValueId>80b6858d-a561-48b2-ae11-3cf6397340e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.УпаковкиЕдиницыИзмерения" category="Manager">
+				<xr:TypeId>c6d3281d-df10-48da-b6c4-997aa84ef912</xr:TypeId>
+				<xr:ValueId>9545e277-3fbf-449b-9afb-0862e6f4c81a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УпаковкиЕдиницыИзмерения</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

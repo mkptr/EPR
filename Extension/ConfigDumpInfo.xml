@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
+	<ConfigVersions>
+		<Metadata name="Catalog.ВидыЦен" id="5e7940a7-811c-4ee2-ba14-12f503c26902" configVersion="1c8c72dc65ffdbc51c89407914a8666c4632cf7c"/>
+		<Metadata name="Catalog.ДоговорыКонтрагентов" id="29573f18-ff78-455d-99d3-6b06c8a09ca2" configVersion="ada235e58c8b80c297626140691ec8c3b81accd6">
+			<Metadata name="Catalog.ДоговорыКонтрагентов.Attribute.КодАккаунта" id="0469d085-7308-4f14-9612-1d9e9166924b"/>
+		</Metadata>
+		<Metadata name="Catalog.Номенклатура" id="c8eeedcb-d423-44bf-b50f-56322faca736" configVersion="ddea084b7d89b1fe4fbd17a2f547f3f1ced3cb61">
+			<Metadata name="Catalog.Номенклатура.Attribute.Артикул" id="e2148534-1516-46b9-b51f-51f50f266033"/>
+		</Metadata>
+		<Metadata name="Catalog.СерииНоменклатуры" id="1757f010-0d74-4894-bb87-f7b7470cc3f9" configVersion="346417a65d8ac15b1abc6275ce9c16cc77d08f7f">
+			<Metadata name="Catalog.СерииНоменклатуры.Attribute.Номер" id="79099487-d55c-41de-87ad-b2fcfe177d91"/>
+		</Metadata>
+		<Metadata name="Catalog.СоглашенияСКлиентами" id="f6107f21-fe91-43f5-88a1-0227c7fba8ca" configVersion="5ba0ba2e71f453ca954df19743caafbbc62c141e">
+			<Metadata name="Catalog.СоглашенияСКлиентами.Attribute.Номер" id="a2da18b2-8efd-41d0-8e03-48e2015c4e8e"/>
+		</Metadata>
+		<Metadata name="Catalog.УпаковкиЕдиницыИзмерения" id="c3ec5504-465d-43e8-a67a-c20d9d01f76b" configVersion="8966e72e0a66428f5de72345c4d17d828689826d"/>
+		<Metadata name="CommonModule.SC_ИнтеграцияСESD" id="c541b98c-4793-44ea-8ce8-0d89df0dab08" configVersion="7eeb6074547c5cab5fcbf4fd866336bc309451e9"/>
+		<Metadata name="CommonModule.SC_ИнтеграцияСESD.Module" id="c541b98c-4793-44ea-8ce8-0d89df0dab08.0" configVersion="88682d1b3a76808b365110ea3b41ace192a596ae"/>
+		<Metadata name="CommonModule.SC_ПустойМодуль" id="280b2b0e-6798-45e5-91a1-fb9ab71398d5" configVersion="2620676b09192991cb35b0715535daa032ae941b"/>
+		<Metadata name="CommonModule.SC_ПустойМодуль.Module" id="280b2b0e-6798-45e5-91a1-fb9ab71398d5.0" configVersion="5cc67a90e32cfa0bc442a973c93802f17a67ad35"/>
+		<Metadata name="CommonModule.SC_РегламентныеЗадания" id="c1924b7b-f44c-4c32-a2fd-024b4f052f9a" configVersion="d8985e15338d6c5c4caa56e8acbb224bfa4f0410"/>
+		<Metadata name="CommonModule.SC_РегламентныеЗадания.Module" id="c1924b7b-f44c-4c32-a2fd-024b4f052f9a.0" configVersion="ff9cb4dffde07ba65c5acff02e2d82261bd36715"/>
+		<Metadata name="Configuration.РасширениеERP_SC" id="f35f52e8-b3af-499a-8589-df3ad43e5ce3" configVersion="0c2337eb94eb182369597ab26c8341584a72d660"/>
+		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП" id="6d187da2-6ceb-47c9-a3ef-55339f1f102d" configVersion="51e550a9fe4ef1c69262085784792299c1c19baf"/>
+		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП.Form.Форма" id="50eb75e0-38e7-4f40-872e-0c782a01b8a8" configVersion="9da09bb8573130ed064b4968b57632d6a248cdd4"/>
+		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП.Form.Форма.Form" id="50eb75e0-38e7-4f40-872e-0c782a01b8a8.0" configVersion="4bdf8e069ab9ef207c496edf2aeb9cedd3ef1337"/>
+		<Metadata name="DefinedType.НомерСерии" id="04a2e670-8709-4c6d-8b17-9614a86ed180" configVersion="eaab5771d7b837fd45d14de3f0c92181a7ad3489"/>
+		<Metadata name="InformationRegister.КорректировкиESD" id="980edf3a-d264-4444-a167-5e6f4c51a5c3" configVersion="3e3292bc1d1af8749793debca7028717630b080b">
+			<Metadata name="InformationRegister.КорректировкиESD.Resource.Price" id="6a767851-cf02-42d0-916c-cef703dde99b"/>
+			<Metadata name="InformationRegister.КорректировкиESD.Dimension.ServerTxId" id="ddd0acf4-9c98-4849-b2b2-914d686b17e1"/>
+			<Metadata name="InformationRegister.КорректировкиESD.Attribute.Обработано" id="f4bf4ea9-7d84-45b3-9d3f-064b6fbaefee"/>
+		</Metadata>
+		<Metadata name="InformationRegister.КорректировкиESD.RecordSetModule" id="980edf3a-d264-4444-a167-5e6f4c51a5c3.1" configVersion="381349b362691cf09883f16bd23324b7fc80c9db"/>
+		<Metadata name="InformationRegister.СерииESD" id="0dec6e7b-7843-42aa-85cd-974acdd4f229" configVersion="9a8869f74e95d20f5b12fa5dafc6a96cef0e1570">
+			<Metadata name="InformationRegister.СерииESD.Dimension.ServerTxId" id="7f68b75d-8744-4850-85c5-4cdfb55bf89f"/>
+			<Metadata name="InformationRegister.СерииESD.Dimension.TransactionKind" id="9984f33c-dd43-47af-b830-437e6875a9db"/>
+			<Metadata name="InformationRegister.СерииESD.Dimension.SerialId" id="99f39a9d-acdd-43a1-9e8d-6c4f5f6176f8"/>
+			<Metadata name="InformationRegister.СерииESD.Dimension.SerialSetScId" id="c0f871b4-63bf-4dea-88a2-90a6a8a32ac5"/>
+		</Metadata>
+		<Metadata name="InformationRegister.ТранзакцииESD" id="9e73e716-2ab9-4549-b552-dd6afbb8df4f" configVersion="1eb902c1db0aee64f2f8aeb1598eef7118af6b49">
+			<Metadata name="InformationRegister.ТранзакцииESD.Dimension.TxRef" id="04f042c1-df70-45cb-9400-f232d7527adc"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Dimension.Manufacture" id="2b84d4b8-e0e3-41cb-b173-796ceebc6591"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Attribute.Обработано" id="3b5cab42-37e1-479c-9f34-337ce6687368"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Resource.Price" id="41158027-8223-4c2d-9e0e-78936ae5da3d"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Dimension.ServerTxId" id="411926f6-ac75-4bd4-9880-4b51a9edee53"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Dimension.NomenclatureScId" id="998008b0-8e69-4de2-9f16-8a47fc9173fc"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Dimension.Date" id="dd59e728-87eb-42d5-afd3-cab954469eaa"/>
+			<Metadata name="InformationRegister.ТранзакцииESD.Dimension.AgreementScId" id="e874bebc-f40a-47a7-8e1f-41e4f2f4681e"/>
+		</Metadata>
+		<Metadata name="InformationRegister.ТранзакцииESD.RecordSetModule" id="9e73e716-2ab9-4549-b552-dd6afbb8df4f.1" configVersion="381349b362691cf09883f16bd23324b7fc80c9db"/>
+		<Metadata name="InformationRegister.ШтрихкодыНоменклатуры" id="5b07c707-b989-4f41-b979-dc0d87b4190d" configVersion="27194c0c081ab21012672e71fcba3c1cff418a06">
+			<Metadata name="InformationRegister.ШтрихкодыНоменклатуры.Resource.Номенклатура" id="3ab86fa1-57f1-43c1-9b73-d3bcef431010"/>
+			<Metadata name="InformationRegister.ШтрихкодыНоменклатуры.Dimension.Штрихкод" id="d89d43de-770e-4fa0-bf4d-b27239bb5dda"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="ff351ca6-18a8-4580-a1cf-82c635be1019" configVersion="0f877550a0d3ae4e31f95121b9215967bc0f989b"/>
+		<Metadata name="Report.SC_КорректировкиВозвратовЗаПериод" id="3a83ebd7-8525-4926-b042-d7d9d09312f1" configVersion="18a2553b362f3816279244dffad0215e03f81867"/>
+		<Metadata name="Report.SC_КорректировкиВозвратовЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных" id="c7edf701-c004-44d5-a4a3-78816ba05836" configVersion="33e6bb124f222a0a53ec27b603fc7a5c2100e341"/>
+		<Metadata name="Report.SC_КорректировкиВозвратовЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="c7edf701-c004-44d5-a4a3-78816ba05836.0" configVersion="6c60c4a56a06cbbc55552769f6480123fec893b5"/>
+		<Metadata name="Report.SC_КорректировкиПродажЗаПериод" id="f4da47ad-e46f-4dc8-920e-12eca4c4eac8" configVersion="1f0f9bc90ecaa636e490eee6b9dca9211ccf3dfc"/>
+		<Metadata name="Report.SC_КорректировкиПродажЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных" id="38fe1652-aec7-43b5-baf0-275da7bffac2" configVersion="7604aa3b95b5343d45ccee811a1168d185a082bc"/>
+		<Metadata name="Report.SC_КорректировкиПродажЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="38fe1652-aec7-43b5-baf0-275da7bffac2.0" configVersion="f1de132f7fb4134b9f0df4d1eb0f82a59c981ef4"/>
+		<Metadata name="Report.SC_ПродажиESD" id="0182350d-490d-4ca2-9a64-a9d938bd1744" configVersion="1a8a31856354bf45680530db960c9d791eda80f8"/>
+		<Metadata name="Report.SC_ПродажиESD.Template.ОсновнаяСхемаКомпоновкиДанных" id="eec178a0-89d4-4b96-9278-d164f41a2112" configVersion="91b707c72d18d7b2d22dc2ad0069d38b0cfa7897"/>
+		<Metadata name="Report.SC_ПродажиESD.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="eec178a0-89d4-4b96-9278-d164f41a2112.0" configVersion="d4d61341ad7c022c9a969dc08b8ba5e156627e92"/>
+		<Metadata name="Role.SC_ПросмотрОтчетовПоТранзакциямESD" id="e2b492b6-5365-4508-9b22-8c70cafc5b8b" configVersion="e3cb3ddcd65186200331efe87b81a3e09fb96fee"/>
+		<Metadata name="Role.SC_ПросмотрОтчетовПоТранзакциямESD.Rights" id="e2b492b6-5365-4508-9b22-8c70cafc5b8b.0" configVersion="c9be2a1bfa82863f0956f9ea7c53f65b24de2479"/>
+		<Metadata name="Role.SC_ЧтениеТранзакцийESD" id="3301a486-c576-45c4-bf52-bb87e03bbce2" configVersion="ee18c16a968e33f8c4cf458e0f483478ee63f025"/>
+		<Metadata name="Role.SC_ЧтениеТранзакцийESD.Rights" id="3301a486-c576-45c4-bf52-bb87e03bbce2.0" configVersion="696299efba573211389fbb36942a31887b6ecc15"/>
+		<Metadata name="Role.ПолныеПрава" id="6a8aa65f-bcd8-4060-a745-e41231f4c2f1" configVersion="f598f2f4cec9d038b20dd4cc77196d9ebd173e1c"/>
+		<Metadata name="Role.ПолныеПрава.Rights" id="6a8aa65f-bcd8-4060-a745-e41231f4c2f1.0" configVersion="a5b3f9a460ce7b58e62129cbe6a9d8e8d2ec1980"/>
+		<Metadata name="Subsystem.Продажи" id="b84ef0a9-5f44-4cc1-82c6-3131687ee26f" configVersion="f0a11396d787e1d22f01a6e2d9f2de68a405d398"/>
+		<Metadata name="Subsystem.Продажи.Subsystem.ИнтеграцияСESD" id="485adb18-1936-41fa-a30e-c98232a5442d" configVersion="b90f449f1340912b52197be6a6d1a39efe221af0"/>
+		<Metadata name="Subsystem.Продажи.Subsystem.ИнтеграцияСESD.CommandInterface" id="485adb18-1936-41fa-a30e-c98232a5442d.1" configVersion="d4d9d530bc1169de8ac7d59f5f4775f2084becea"/>
+		<Metadata name="WSReference.SC_ESD" id="1d419306-59ef-4d36-ac36-8334d6f4b757" configVersion="5a31b07ecba147b3579f66333dd6d2ee280a4915"/>
+		<Metadata name="WSReference.SC_ESD.WSDefinition" id="1d419306-59ef-4d36-ac36-8334d6f4b757.0" configVersion="b7c32a3b6cd04127a8a49784e587d3753940f0ea"/>
+		<Metadata name="WebService.ESDTransactions" id="9d578f58-fb60-4d71-a67b-9c604da1842e" configVersion="2f5f5dc8d38e2494c4449d5006feb560467d789c">
+			<Metadata name="WebService.ESDTransactions.Operation.LoadTransactions" id="1c87eb9b-6888-4008-9e50-289e167399c2"/>
+			<Metadata name="WebService.ESDTransactions.Operation.LoadAdjustments" id="2e251805-9d83-455f-8f18-ac2d2030ad2a"/>
+			<Metadata name="WebService.ESDTransactions.Operation.LoadAdjustments.Parameter.TableAdjustments" id="36bebbb6-409b-457c-b171-9ed17a5e0144"/>
+			<Metadata name="WebService.ESDTransactions.Operation.LoadTransactions.Parameter.TableESD" id="d8c58a4d-c468-446b-af8e-6fd63511255f"/>
+			<Metadata name="WebService.ESDTransactions.Operation.LoadTransactions.Parameter.DateLoad" id="ff382927-94cc-4210-a497-34b0a5d8fcb0"/>
+		</Metadata>
+		<Metadata name="WebService.ESDTransactions.Module" id="9d578f58-fb60-4d71-a67b-9c604da1842e.0" configVersion="26e43755117d3caf4e2f9f7438230040076dd3f4"/>
+		<Metadata name="XDTOPackage.ESDTransactions" id="f77485f7-ab65-4e7c-b887-67e596701845" configVersion="a9e71c68625b51c26269c185d9b4041028bc9fa9"/>
+		<Metadata name="XDTOPackage.ESDTransactions.Package" id="f77485f7-ab65-4e7c-b887-67e596701845.0" configVersion="4471c442fed926b8074eedba01f7521a5d3fb6fa"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

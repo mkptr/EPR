@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="www.softclub.ru"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="ESD"
+		xmlns:xsd2="www.softclub.ru"
+		name="ESD"
+		targetNamespace="www.softclub.ru">
+	<types>
+		<xs:schema xmlns:tns="ESD"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="www.softclub.ru"
+				xmlns:xsd2="ESD"
+				targetNamespace="ESD"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:complexType name="ElementAgreement">
+				<xs:sequence>
+					<xs:element name="Rtl"
+							type="xs:string"/>
+					<xs:element name="Nomenclatures"
+							type="xsd2:ElementNomenclature"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementBalance">
+				<xs:sequence>
+					<xs:element name="Rtl"
+							type="xs:string"/>
+					<xs:element name="Sum"
+							type="xs:double"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementDate">
+				<xs:sequence>
+					<xs:element name="Date"
+							type="xs:date"/>
+					<xs:element name="Agreements"
+							type="xsd2:ElementAgreement"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementESD">
+				<xs:sequence>
+					<xs:element name="Date"
+							type="xs:date"/>
+					<xs:element name="Rtl"
+							type="xs:string"/>
+					<xs:element name="Art"
+							type="xs:string"/>
+					<xs:element name="QT"
+							type="xs:int"/>
+					<xs:element name="Pkg"
+							type="xs:boolean"/>
+					<xs:element name="Specification"
+							type="xsd2:TableSpecification"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementNomenclature">
+				<xs:sequence>
+					<xs:element name="Art"
+							type="xs:string"/>
+					<xs:element name="QT"
+							type="xs:int"/>
+					<xs:element name="Date"
+							type="xs:date"/>
+					<xs:element name="Summa"
+							type="xs:double"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementPartners">
+				<xs:sequence>
+					<xs:element name="Rtl"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementPrice">
+				<xs:sequence>
+					<xs:element name="Date"
+							type="xs:date"/>
+					<xs:element name="Rtl"
+							type="xs:string"/>
+					<xs:element name="Art"
+							type="xs:string"/>
+					<xs:element name="TypePrice"
+							type="xs:string"/>
+					<xs:element name="Price"
+							type="xs:double"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementProduct">
+				<xs:sequence>
+					<xs:element name="Art"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementPurchaseESD">
+				<xs:sequence>
+					<xs:element name="Date"
+							type="xs:date"/>
+					<xs:element name="Contr"
+							type="xs:string"/>
+					<xs:element name="PIN_Net"
+							type="xs:string"/>
+					<xs:element name="Art"
+							type="xs:string"/>
+					<xs:element name="QT"
+							type="xs:int"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ElementSpecification">
+				<xs:sequence>
+					<xs:element name="Art"
+							type="xs:string"
+							nillable="true"/>
+					<xs:element name="Stock"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ResultOfOperation">
+				<xs:sequence>
+					<xs:element name="Success"
+							type="xs:boolean"/>
+					<xs:element name="Comments"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ResultOfOperationBalance">
+				<xs:sequence>
+					<xs:element name="TableBalance"
+							type="xsd2:TableBalance"/>
+					<xs:element name="Success"
+							type="xs:boolean"/>
+					<xs:element name="Comments"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ResultOfOperationPrice">
+				<xs:sequence>
+					<xs:element name="TablePrice"
+							type="xsd2:TablePrice"/>
+					<xs:element name="Success"
+							type="xs:boolean"/>
+					<xs:element name="Comments"
+							type="xs:string"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableAdjustments">
+				<xs:sequence>
+					<xs:element name="Dates"
+							type="xsd2:ElementDate"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableBalance">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementBalance"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableESD">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementESD"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TablePartners">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementPartners"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TablePrice">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementPrice"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableProduct">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementProduct"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TablePurchaseESD">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementPurchaseESD"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="TableSpecification">
+				<xs:sequence>
+					<xs:element name="Element"
+							type="xsd2:ElementSpecification"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="ESD"
+				xmlns:xs2="www.softclub.ru"
+				xmlns:xsd1="www.softclub.ru"
+				xmlns:xsd2="ESD"
+				targetNamespace="www.softclub.ru"
+				elementFormDefault="qualified">
+			<xs:import namespace="ESD"/>
+			<xs:element name="LoadSale">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TableESD"
+								type="xsd2:TableESD"/>
+						<xs:element name="DateLoad"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadSaleResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperation"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetBalance">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="DateUnload"
+								type="xs:date"/>
+						<xs:element name="TablePartners"
+								type="xsd2:TablePartners"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetBalanceResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperationBalance"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPrice">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Date"
+								type="xs:date"/>
+						<xs:element name="TablePartners"
+								type="xsd2:TablePartners"/>
+						<xs:element name="TableProduct"
+								type="xsd2:TableProduct"/>
+						<xs:element name="FuturePrices"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPriceResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperationPrice"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadRefund">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TableESD"
+								type="xsd2:TableESD"/>
+						<xs:element name="DateLoad"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadRefundResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperation"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadPurchase">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TablePurchaseESD"
+								type="xsd2:TablePurchaseESD"/>
+						<xs:element name="DateLoad"
+								type="xs:date"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadPurchaseResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperation"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadSaleAdjustments">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TableAdjustments"
+								type="xsd2:TableAdjustments"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadSaleAdjustmentsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperation"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadRefundAdjustments">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TableAdjustments"
+								type="xsd2:TableAdjustments"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LoadRefundAdjustmentsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:ResultOfOperation"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="LoadSaleRequestMessage">
+		<part name="parameters"
+				element="tns:LoadSale"/>
+	</message>
+	<message name="LoadSaleResponseMessage">
+		<part name="parameters"
+				element="tns:LoadSaleResponse"/>
+	</message>
+	<message name="GetBalanceRequestMessage">
+		<part name="parameters"
+				element="tns:GetBalance"/>
+	</message>
+	<message name="GetBalanceResponseMessage">
+		<part name="parameters"
+				element="tns:GetBalanceResponse"/>
+	</message>
+	<message name="GetPriceRequestMessage">
+		<part name="parameters"
+				element="tns:GetPrice"/>
+	</message>
+	<message name="GetPriceResponseMessage">
+		<part name="parameters"
+				element="tns:GetPriceResponse"/>
+	</message>
+	<message name="LoadRefundRequestMessage">
+		<part name="parameters"
+				element="tns:LoadRefund"/>
+	</message>
+	<message name="LoadRefundResponseMessage">
+		<part name="parameters"
+				element="tns:LoadRefundResponse"/>
+	</message>
+	<message name="LoadPurchaseRequestMessage">
+		<part name="parameters"
+				element="tns:LoadPurchase"/>
+	</message>
+	<message name="LoadPurchaseResponseMessage">
+		<part name="parameters"
+				element="tns:LoadPurchaseResponse"/>
+	</message>
+	<message name="LoadSaleAdjustmentsRequestMessage">
+		<part name="parameters"
+				element="tns:LoadSaleAdjustments"/>
+	</message>
+	<message name="LoadSaleAdjustmentsResponseMessage">
+		<part name="parameters"
+				element="tns:LoadSaleAdjustmentsResponse"/>
+	</message>
+	<message name="LoadRefundAdjustmentsRequestMessage">
+		<part name="parameters"
+				element="tns:LoadRefundAdjustments"/>
+	</message>
+	<message name="LoadRefundAdjustmentsResponseMessage">
+		<part name="parameters"
+				element="tns:LoadRefundAdjustmentsResponse"/>
+	</message>
+	<portType name="ESDPortType">
+		<operation name="LoadSale">
+			<input name="LoadSaleRequest"
+					message="tns:LoadSaleRequestMessage"/>
+			<output name="LoadSaleResponse"
+					message="tns:LoadSaleResponseMessage"/>
+		</operation>
+		<operation name="GetBalance">
+			<input name="GetBalanceRequest"
+					message="tns:GetBalanceRequestMessage"/>
+			<output name="GetBalanceResponse"
+					message="tns:GetBalanceResponseMessage"/>
+		</operation>
+		<operation name="GetPrice">
+			<input name="GetPriceRequest"
+					message="tns:GetPriceRequestMessage"/>
+			<output name="GetPriceResponse"
+					message="tns:GetPriceResponseMessage"/>
+		</operation>
+		<operation name="LoadRefund">
+			<input name="LoadRefundRequest"
+					message="tns:LoadRefundRequestMessage"/>
+			<output name="LoadRefundResponse"
+					message="tns:LoadRefundResponseMessage"/>
+		</operation>
+		<operation name="LoadPurchase">
+			<input name="LoadPurchaseRequest"
+					message="tns:LoadPurchaseRequestMessage"/>
+			<output name="LoadPurchaseResponse"
+					message="tns:LoadPurchaseResponseMessage"/>
+		</operation>
+		<operation name="LoadSaleAdjustments">
+			<input name="LoadSaleAdjustmentsRequest"
+					message="tns:LoadSaleAdjustmentsRequestMessage"/>
+			<output name="LoadSaleAdjustmentsResponse"
+					message="tns:LoadSaleAdjustmentsResponseMessage"/>
+		</operation>
+		<operation name="LoadRefundAdjustments">
+			<input name="LoadRefundAdjustmentsRequest"
+					message="tns:LoadRefundAdjustmentsRequestMessage"/>
+			<output name="LoadRefundAdjustmentsResponse"
+					message="tns:LoadRefundAdjustmentsResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="ESDSoapBinding"
+			type="tns:ESDPortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="LoadSale">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadSale"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetBalance">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:GetBalance"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetPrice">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:GetPrice"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadRefund">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadRefund"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadPurchase">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadPurchase"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadSaleAdjustments">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadSaleAdjustments"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadRefundAdjustments">
+			<soapbind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadRefundAdjustments"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="ESDSoap12Binding"
+			type="tns:ESDPortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="LoadSale">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadSale"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetBalance">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:GetBalance"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetPrice">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:GetPrice"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadRefund">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadRefund"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadPurchase">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadPurchase"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadSaleAdjustments">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadSaleAdjustments"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="LoadRefundAdjustments">
+			<soap12bind:operation style="document"
+					soapAction="www.softclub.ru#ESD:LoadRefundAdjustments"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="ESD">
+		<port name="ESDSoap"
+				binding="tns:ESDSoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="http://sv08/DEV04/ws/esdws.1cws"/>
+		</port>
+		<port name="ESDSoap12"
+				binding="tns:ESDSoap12Binding">
+			<soap12bind:address location="http://sv08/DEV04/ws/esdws.1cws"/>
+		</port>
+	</service>
+</definitions>

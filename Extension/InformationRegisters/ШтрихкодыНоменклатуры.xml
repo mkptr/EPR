@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<InformationRegister uuid="5b07c707-b989-4f41-b979-dc0d87b4190d">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ШтрихкодыНоменклатуры" category="Record">
+				<xr:TypeId>abe4ab71-1730-43d4-af9c-148d4323899a</xr:TypeId>
+				<xr:ValueId>41d3b475-0712-4afa-9fd4-e9b368e01101</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ШтрихкодыНоменклатуры" category="Manager">
+				<xr:TypeId>04c9cb3a-4e8a-428d-b495-bdb0d6fb3db0</xr:TypeId>
+				<xr:ValueId>c9d80661-42a1-47d9-ab3f-a172b6d7c437</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ШтрихкодыНоменклатуры" category="Selection">
+				<xr:TypeId>8e471ef0-7997-4ea3-92ff-8cdbd0cb7bdc</xr:TypeId>
+				<xr:ValueId>f2aaa519-fdcb-4a85-bb4e-a82258689c18</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ШтрихкодыНоменклатуры" category="List">
+				<xr:TypeId>adaddb67-0682-4d26-9f78-21926c384ada</xr:TypeId>
+				<xr:ValueId>7521e4ba-6750-4150-a092-7c2eea04ee61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ШтрихкодыНоменклатуры" category="RecordSet">
+				<xr:TypeId>e4becc9f-a9b8-4f86-9cfb-29d4e15821c9</xr:TypeId>
+				<xr:ValueId>76cace89-4e17-4c41-bedc-90a1ec8e41f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ШтрихкодыНоменклатуры" category="RecordKey">
+				<xr:TypeId>aae2f15d-d86a-4553-8a09-73feb377d7cf</xr:TypeId>
+				<xr:ValueId>649ae82a-a69b-4dc9-b4b9-5bc7274f9719</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ШтрихкодыНоменклатуры" category="RecordManager">
+				<xr:TypeId>b7c004fe-519a-4b56-a604-6459fe02af1d</xr:TypeId>
+				<xr:ValueId>5c4093d4-e81f-42d3-8a73-4728e73efa59</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ШтрихкодыНоменклатуры</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>fe779ac1-0e7f-489c-ad06-bec9af582428</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="3ab86fa1-57f1-43c1-9b73-d3bcef431010">
+				<InternalInfo/>
+				<Properties>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>d561ee5a-2a87-4205-93af-4902b1247d87</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="d89d43de-770e-4fa0-bf4d-b27239bb5dda">
+				<InternalInfo/>
+				<Properties>
+					<Name>Штрихкод</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>75e2d606-c8d4-4cfe-8f96-2eaa5c364409</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

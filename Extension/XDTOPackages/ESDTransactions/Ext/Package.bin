@@ -1,0 +1,30 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="ESDTransactions">
+	<objectType name="ResultOfOperation">
+		<property name="Success" type="xs:boolean"/>
+		<property name="Comments" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="TableESD">
+		<property xmlns:d3p1="ESDTransactions" name="Element" type="d3p1:ElementESD" upperBound="-1"/>
+	</objectType>
+	<objectType name="ElementESD">
+		<property name="ServerTxId" type="xs:long" nillable="false"/>
+		<property name="AgreementScId" type="xs:string" nillable="false"/>
+		<property name="NomenclatureScId" type="xs:string" nillable="false"/>
+		<property name="Price" type="xs:decimal" nillable="true"/>
+		<property name="Manufacture" type="xs:boolean"/>
+		<property xmlns:d3p1="ESDTransactions" name="Serials" type="d3p1:SerialsESD" upperBound="-1"/>
+		<property name="TxRef" type="xs:long" nillable="true"/>
+	</objectType>
+	<objectType name="SerialsESD">
+		<property name="SerialId" type="xs:string" nillable="false"/>
+		<property name="SerialSetScId" type="xs:string" nillable="false"/>
+		<property name="TransactionKind" type="xs:string" nillable="false"/>
+	</objectType>
+	<objectType name="TableAdjustments">
+		<property xmlns:d3p1="ESDTransactions" name="Elements" type="d3p1:ElementAdjustments" upperBound="-1"/>
+	</objectType>
+	<objectType name="ElementAdjustments">
+		<property name="ServerTxId" type="xs:long" nillable="false"/>
+		<property name="Price" type="xs:decimal" nillable="false"/>
+	</objectType>
+</package>
