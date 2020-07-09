@@ -22,9 +22,9 @@
 		<Metadata name="CommonModule.SC_РегламентныеЗадания" id="c1924b7b-f44c-4c32-a2fd-024b4f052f9a" configVersion="d8985e15338d6c5c4caa56e8acbb224bfa4f0410"/>
 		<Metadata name="CommonModule.SC_РегламентныеЗадания.Module" id="c1924b7b-f44c-4c32-a2fd-024b4f052f9a.0" configVersion="ff9cb4dffde07ba65c5acff02e2d82261bd36715"/>
 		<Metadata name="Configuration.РасширениеERP_SC" id="f35f52e8-b3af-499a-8589-df3ad43e5ce3" configVersion="0c2337eb94eb182369597ab26c8341584a72d660"/>
-		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП" id="6d187da2-6ceb-47c9-a3ef-55339f1f102d" configVersion="51e550a9fe4ef1c69262085784792299c1c19baf"/>
+		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП" id="6d187da2-6ceb-47c9-a3ef-55339f1f102d" configVersion="830474cc55d78dd45c932a9763203b5c32abb609"/>
 		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП.Form.Форма" id="50eb75e0-38e7-4f40-872e-0c782a01b8a8" configVersion="9da09bb8573130ed064b4968b57632d6a248cdd4"/>
-		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП.Form.Форма.Form" id="50eb75e0-38e7-4f40-872e-0c782a01b8a8.0" configVersion="4bdf8e069ab9ef207c496edf2aeb9cedd3ef1337"/>
+		<Metadata name="DataProcessor.ЗагрузкаКорректировокВУПП.Form.Форма.Form" id="50eb75e0-38e7-4f40-872e-0c782a01b8a8.0" configVersion="0e2ae2ae047cb15dcd0ad3eee280831b27f88f87"/>
 		<Metadata name="DefinedType.НомерСерии" id="04a2e670-8709-4c6d-8b17-9614a86ed180" configVersion="eaab5771d7b837fd45d14de3f0c92181a7ad3489"/>
 		<Metadata name="InformationRegister.КорректировкиESD" id="980edf3a-d264-4444-a167-5e6f4c51a5c3" configVersion="3e3292bc1d1af8749793debca7028717630b080b">
 			<Metadata name="InformationRegister.КорректировкиESD.Resource.Price" id="6a767851-cf02-42d0-916c-cef703dde99b"/>

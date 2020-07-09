@@ -3,9 +3,18 @@
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Button name="ФормаСоздатьНовыеЭлементы" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьНовыеЭлементы</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьНовыеЭлементыРасширеннаяПодсказка" id="18"/>
+			</Button>
+			<Button name="ФормаЗагрузитьЦены" id="15">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьЦены</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьЦеныРасширеннаяПодсказка" id="16"/>
+			</Button>
 			<Button name="Выгрузить" id="1">
 				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Выгрузить</CommandName>
 				<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="2"/>
 			</Button>
@@ -104,7 +113,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить</v8:content>
+					<v8:content>3.Выгрузить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -114,6 +123,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="ЗагрузитьЦены" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2.Загрузить цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЦены</Action>
+		</Command>
+		<Command name="СоздатьНовыеЭлементы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1.Создать новые элементы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новые элементы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовыеЭлементы</Action>
 		</Command>
 	</Commands>
 </Form>
